@@ -42,8 +42,8 @@ def ask_subnautica_ai(question: str):
 
     # Prompt engineering
     prompt = f"""You are an expert Subnautica AI assistant.
-    Answear the user's question using ONLY the provided context below.
-    If the answer is not in the context, say "I cannot answer that question based on the provided information."
+    Answer the user's question using ONLY the provided context below.
+    If the answer is not in the context, say "I cannot answer this based on the provided information."
 
     Context:
     {context}
@@ -67,3 +67,4 @@ def ask_subnautica_ai(question: str):
 if __name__ == "__main__":
     ask_subnautica_ai("What is the maximum depth the Seamoth can reach with upgrades?")
     ask_subnautica_ai("Where can I find Magnetite?")
+    ask_subnautica_ai("Can the Seamoth Laser Cannon kill the Reaper Leviathan?")

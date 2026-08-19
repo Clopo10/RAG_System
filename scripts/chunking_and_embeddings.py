@@ -17,7 +17,7 @@ collection = chroma_client.get_or_create_collection(
 )
 
 # Chunking function
-def chunk_text(text: str, chunk_size: int = 500, overlap: int = 50):
+def chunk_text(text: str, chunk_size: int = 1200, overlap: int = 120):
     """
     Splits the input text into chunks of specified size with a defined overlap.
 
